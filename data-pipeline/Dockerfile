@@ -9,6 +9,8 @@ COPY . .
 # Install the project and dependencies
 RUN pip install .
 
+RUN pip install dagster-postgres
+
 # Set environment variables
 ENV DAGSTER_HOME=/opt/dagster/dagster_home
 RUN mkdir -p $DAGSTER_HOME
