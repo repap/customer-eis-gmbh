@@ -3,7 +3,8 @@ name = "data_pipeline"
 requires-python = ">=3.10,<3.15"
 version = "0.1.0"
 dependencies = [
-    "dagster==1.12.8",
+    "dagster",
+    "dagster-postgres"
     "pandas>=2.3.3",
 ]
 
