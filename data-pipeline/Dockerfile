@@ -4,7 +4,7 @@ FROM python:3.13-slim
 WORKDIR /opt/dagster/app
 
 # Copy the project files
-COPY data-pipeline/ .
+COPY . .
 
 # Install the project and dependencies
 RUN pip install .
